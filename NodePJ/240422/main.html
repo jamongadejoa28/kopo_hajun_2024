@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    0 <input type="radio" name="r1">
+    1 <input type="radio" name="r1">
+    2 <input type="radio" name="r1">
+    3 <input type="radio" name="r1">
+    4 <input type="radio" name="r1">
+    <input type="text" id="rev1">
+    <br>
+    0 <input type="radio" name="r2">
+    1 <input type="radio" name="r2">
+    2 <input type="radio" name="r2">
+    3 <input type="radio" name="r2">
+    4 <input type="radio" name="r2">
+    <input type="text" id="rev2">
+    <br>
+    0 <input type="radio" name="r3">
+    1 <input type="radio" name="r3">
+    2 <input type="radio" name="r3">
+    3 <input type="radio" name="r3">
+    4 <input type="radio" name="r3">
+    <input type="text" id="rev3">
+    <br>
+    <input type="button" value="계산" id="calcBtn">
+    <br>
+    <div id="resultArea">
+
+    </div>
+
+  </body>
+  <script type="text/javascript">
+    let calcBtn = document.getElementById("calcBtn");
+    calcBtn.addEventListener('click', function(){
+      let score1;
+      let radioBtns1 = document.getElementsByName("r1");
+      for(let i = 0; i <radioBtns1.length; i++){
+        if(radioBtns1[i].checked){
+          score1 = i;
+        }
+      }
+      let rev1 = document.getElementById("rev1").value;
+
+      let score2;
+      let radioBtns2 = document.getElementsByName("r2");
+      for(let i = 0; i <radioBtns2.length; i++){
+        if(radioBtns2[i].checked){
+          score2 = i;
+        }
+      }
+      let rev2 = document.getElementById("rev2").value;
+
+      let score3;
+      let radioBtns3 = document.getElementsByName("r3");
+      for(let i = 0; i <radioBtns3.length; i++){
+        if(radioBtns3[i].checked){
+          score3 = i;
+        }
+      }
+      let rev3 = document.getElementById("rev3").value;
+
+      document.getElementById("resultArea").innerHTML = `${score1} X ${rev1}
+      + ${score2} X ${rev2} + ${score3} X ${rev3}
+      = ${score1*rev1 + score2*rev2 + score3*rev3}`;
+    });
+  </script>
+</html>

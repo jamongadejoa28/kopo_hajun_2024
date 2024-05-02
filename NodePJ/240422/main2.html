@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    버스1 있음 <input type="radio" name="r1">
+    없음<input type="radio" name="r1">
+    <br>
+    버스2 있음 <input type="radio" name="r2" >
+    없음<input type="radio" name="r2"">
+    <br>
+    버스3 있음 <input type="radio" name="r3" >
+    없음<input type="radio" name="r3" >
+    <br>
+    지하철1 있음 <input type="radio" name="r4" >
+    없음<input type="radio" name="r4">
+    <br>
+    지하철2 있음 <input type="radio" name="r5">
+    없음<input type="radio" name="r5">
+    <br>
+    지하철3 있음 <input type="radio" name="r6">
+    없음<input type="radio" name="r6">
+    <br>
+    지하철4 있음 <input type="radio" name="r7">
+    없음<input type="radio" name="r7">
+    <br>
+    <input type="button" value="확인버튼" id="btn">
+  </body>
+  <script>
+    let btnClk = document.getElementById("btn");
+    btnClk.addEventListener('click', function(){
+      let rev1 = document.getElementsByName("r1");
+      let rev2 = document.getElementsByName("r2");
+      let rev3 = document.getElementsByName("r3");
+      let rev4 = document.getElementsByName("r4");
+      let rev5 = document.getElementsByName("r5");
+      let rev6 = document.getElementsByName("r6");
+      let rev7 = document.getElementsByName("r7");
+      if(rev1[1].checked && rev2[1].checked && rev3[1].checked
+      && rev4[1].checked && rev5[1].checked && rev6[1].checked && rev7[1].checked){
+        alert("갈 수 없다");
+      }
+      else alert("갈 수 있다");
+    });
+  </script>
+</html>

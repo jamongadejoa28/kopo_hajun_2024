@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    1번
+    0<input type="radio" name="rbtn1">
+    1<input type="radio" name="rbtn1">
+    2<input type="radio" name="rbtn1">
+    3<input type="radio" name="rbtn1">
+    4<input type="radio" name="rbtn1">
+    가중치 <input type="text" id="inputInt1">
+    <br>
+    2번
+    0<input type="radio" name="rbtn2">
+    1<input type="radio" name="rbtn2">
+    2<input type="radio" name="rbtn2">
+    3<input type="radio" name="rbtn2">
+    4<input type="radio" name="rbtn2">
+    가중치 <input type="text" id="inputInt2">
+    <br>
+    3번
+    0<input type="radio" name="rbtn3">
+    1<input type="radio" name="rbtn3">
+    2<input type="radio" name="rbtn3">
+    3<input type="radio" name="rbtn3">
+    4<input type="radio" name="rbtn3">
+    가중치 <input type="text" id="inputInt3">
+    <br>
+    <span id="calculate"></span>
+    <br>
+    <button type="button" id="btn">계산</button>
+
+
+
+    <!-- <button type="button" id="btn" value="chk">체크</button> -->
+  </body>
+  <script type="text/javascript">
+    // let chkbtn = document.getElementById("btn");
+    // chkbtn.addEventListener('click', function(){
+    //   let radiobtn = document.getElementsByName("rbtn");
+    //   for(let i = 0; i < radiobtn.length; i++){
+    //     if(radiobtn[i].checked){
+    //       alert(i+1);
+    //     }
+    //   }
+    // });
+    let btn = document.getElementById("btn");
+    let content = document.getElementById("calculate");
+
+    btn.addEventListener('click',function(){
+      let num1 = document.getElementById("inputInt1").value;
+      let num2 = document.getElementById("inputInt2").value;
+      let num3 = document.getElementById("inputInt3").value;
+      let chkbtn1 = document.getElementsByName("rbtn1");
+      for(let i = 0; i < chkbtn1.length; i++){
+        if(chkbtn1[i].checked){
+          var str1 = `${i}X${num1}`;
+          var n1 = i*num1;
+        }
+      }
+      let chkbtn2 = document.getElementsByName("rbtn2");
+      for(let i = 0; i < chkbtn2.length; i++){
+        if(chkbtn2[i].checked){
+          var str2 = `${i}X${num2}`;
+          var n2 = i*num2;
+        }
+      }
+      let chkbtn3 = document.getElementsByName("rbtn3");
+      for(let i = 0; i < chkbtn3.length; i++){
+        if(chkbtn3[i].checked){
+          var str3 = `${i}X${num3}`;
+          var n3 = i*num3;
+        }
+      }
+      var sum = n1+n2+n3;
+      content.textContent = str1+"+"+str2+"+"+str3+`= ${sum}`
+    });
+
+
+  </script>
+</html>

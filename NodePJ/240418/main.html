@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script>
+    console.time();
+
+    //빈 2차원 배열 생성
+    let arr1 = [];
+    let arr2 = [];
+    let arr3 = [];
+    let arr4 = [];
+    let num = 1;
+    for(let i = 0; i < 5; i++){
+      arr1[i] = [];
+      arr2[i] = [];
+      arr3[i] = [];
+      arr4[i] = [];
+    }
+    console.log("arr1");
+    for(let i = 0; i < 5; i++){
+      for(let j = 0; j < 5; j++){
+        arr1[i][j] = num++;
+      }
+      console.log(arr1[i]);
+    }
+    console.log("");
+
+    console.log("arr2");
+    let num2 = 1;
+    for(let i = 0; i < 5; i++){
+      for(let j = 0; j < 5 ; j++){
+        arr2[i][j] = num2 + 3 * j;
+      }
+      num2 += 5;
+      console.log(arr2[i]);
+    }
+    console.log("");
+
+    console.log("arr3");
+    for(let i = 0; i < 5; i++){
+      for(let j = 0; j < 5 ; j++){
+        arr3[i][j] = i*j;
+      }
+      console.log(arr3[i]);
+    }
+    console.log("");
+
+    console.log("arr4");
+    for(let i = 0; i < 5; i++){
+      for(let j = 0; j < 5; j++){
+        arr4[i][j] = ""+i+j;
+      }
+      console.log(arr4[i]);
+    }
+
+
+
+    console.timeEnd();
+  </script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="inputText1">
+    <input type="text" id="inputText2">
+    <input type="text" id="inputText3">
+    <input type="button" id="inputBtn" value="더하기">
+    <div id="result"></div>
+
+  </body>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $("#inputBtn").click(function(){
+      let num1 = $("#inputText1").val();
+      let num2 = $("#inputText2").val();
+      let num3 = $("#inputText3").val();
+      $.ajax({
+        url:`http://localhost/qsplus?num1=${num1}&num2=${num2}&num3=${num3}`,
+        data:{},
+        success:function(response){
+          $("#result").html(response.result);
+        }
+      });
+    });
+  </script>
+</html>
