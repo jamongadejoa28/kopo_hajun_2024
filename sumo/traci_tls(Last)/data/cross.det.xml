@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-07-19 22:01:58 by Eclipse SUMO netedit Version 1.20.0
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- Detectors -->
+    <laneAreaDetector id="e2_0" lane="4i_2" pos="443.17" length="10.00" period="300.00" file="e2_0.xml"/>
+    <laneAreaDetector id="e2_1" lane="4i_1" pos="444.03" length="10.00" period="300.00" file="e2_1.xml"/>
+    <laneAreaDetector id="e2_10" lane="3i_0" pos="429.49" length="10.00" period="300.00" file="e2_10.xml"/>
+    <laneAreaDetector id="e2_11" lane="3i_1" pos="429.37" length="10.00" period="300.00" file="e2_11.xml"/>
+    <laneAreaDetector id="e2_12" lane="1i_3" pos="446.69" length="10.00" period="300.00" file="e2_12.xml"/>
+    <laneAreaDetector id="e2_13" lane="2i_3" pos="439.97" length="10.00" period="300.00" file="e2_13.xml"/>
+    <laneAreaDetector id="e2_14" lane="4i_3" pos="442.83" length="10.00" period="300.00" file="e2_14.xml"/>
+    <laneAreaDetector id="e2_15" lane="3i_3" pos="429.45" length="10.00" period="300.00" file="e2_15.xml"/>
+    <laneAreaDetector id="e2_2" lane="4i_0" pos="443.66" length="10.00" period="300.00" file="e2_2.xml"/>
+    <laneAreaDetector id="e2_3" lane="2i_0" pos="439.90" length="10.00" period="300.00" file="e2_3.xml"/>
+    <laneAreaDetector id="e2_4" lane="2i_2" pos="440.05" length="10.00" period="300.00" file="e2_4.xml"/>
+    <laneAreaDetector id="e2_5" lane="1i_2" pos="446.95" length="10.00" period="300.00" file="e2_5.xml"/>
+    <laneAreaDetector id="e2_6" lane="2i_1" pos="440.05" length="10.00" period="300.00" file="e2_6.xml"/>
+    <laneAreaDetector id="e2_7" lane="1i_1" pos="446.85" length="10.00" period="300.00" file="e2_7.xml"/>
+    <laneAreaDetector id="e2_8" lane="1i_0" pos="447.15" length="10.00" period="300.00" file="e2_8.xml"/>
+    <laneAreaDetector id="e2_9" lane="3i_2" pos="429.49" length="10.00" period="300.00" file="e2_9.xml"/>
+</additional>
